@@ -1,0 +1,322 @@
+:root {
+    --primary-color: 
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  html,body
+  {
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden; 
+  }
+
+.page-container {
+ display: grid;
+ grid-template-columns: minmax(200px, 250px) minmax(800px, 1fr);
+ background-color: aqua;
+ height: 100vh;
+}
+
+.sidebar-container {
+    background-color: rgb(12, 135, 223);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sidebar-header-container {
+    padding: 18px 0px 0px 15px;
+    display:flex;
+    gap: 5px
+}
+
+.sidebar-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.sidebar-icon > img {
+    filter: invert(100%) sepia(0%) saturate(7455%) hue-rotate(208deg) brightness(99%) contrast(94%);
+}
+
+.sidebar-title {
+    font-size: 25px;
+    color: white;
+}
+
+nav {
+    display: block;
+}
+
+.nav-item {
+    padding: 18px 0px 0px 15px;
+    display: flex;
+    color: white;
+}
+
+.nav-icon {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.nav-icon > img {
+    height: 20px;
+    width: 20px ;
+    filter: invert(100%) sepia(0%) saturate(7455%) hue-rotate(208deg) brightness(99%) contrast(94%);
+}
+.nav-title {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.main-container {
+    background-color: rgb(115, 0, 255);
+    display: grid;
+    grid-template-rows: 150px 3fr;
+    
+
+}
+
+.menubar-container {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    z-index: +3;
+    overflow: hidden;
+    padding: 10px 20px 10px 20px;
+}
+
+.titlebar-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.profilebar-container {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.profilebar-container > button > img {
+    height: 25px;
+}
+
+.searchbar-container {
+    display: flex;
+    
+}
+
+.searchbar-container > form {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    gap: 5px;
+    width: 100%;
+}
+
+input[type="image"] {
+    height: 25px;
+    width: 25px;
+}
+
+input[type="text-area"]{
+
+    border-radius: 15px;
+    border: 0px;
+    background-color: lightgray;
+    padding: 5px 15px 5px 5px;
+    width: 100%;
+    height: 15px;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.actionbar-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+}
+
+.welcome-container {
+    display: flex;
+    gap: 10px;
+    padding-left: 15px;
+}
+
+.avatar-button{
+
+}
+
+.avatar-button > img {
+    height: 50px;
+}
+
+.actions-container{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+.actions-container > button {
+    background-color: rgb(12, 135, 223);
+    height: 25px;
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+}
+
+.actions-container > button > div {
+    align-self: center;
+    color: white;
+    font-size: 15px;
+}
+
+.content-container {
+    background-color: rgb(221, 221, 221);
+    display: grid;
+    grid-template-columns: minmax(550px, 4fr) minmax(250px, 1fr);
+
+}
+
+.content-container > div {
+    padding: 15px;
+}
+
+.projects-container {
+    background-color: rgb(221, 221, 221);
+}
+
+.projects-container > h1 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.articles-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.project-container {
+    border: 0px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    box-shadow: 2px 3px 3px gray;
+}
+
+
+
+.project-card {
+    position: relative;
+    top: 0px; left: 0px;
+    height: 100%;
+    min-width: 10px;
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgb(236, 187, 95);
+}
+
+.project-highlights {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0px; left: 0px;
+    padding: 20px;
+    width: 100%;
+}
+
+.project-description {
+    font-size: 13px;
+    color: grey;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+
+.project-actions {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    align-self: end; 
+    gap: 10px;
+}
+
+.action-icon > img {
+    height: 20px;
+    width: 20px ;
+}
+
+.updates-container {
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.updates-container {
+    padding: 20px;
+}
+
+.updates-container > div > h1 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.update-container > div {
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.announcements-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.trending-container{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+
+}
+
+.announcement {
+
+}
+
+a:visited {
+    text-decoration: none;
+  }
+
+a:link {
+    text-decoration: none;
+}
+
+.clickable:hover {
+    -webkit-transform: scale(1.07);
+    padding-left: 20px;
+}
+
+button, input[type="submit"] {
+    border: none;
+    background: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+}
